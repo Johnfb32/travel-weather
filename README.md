@@ -6,8 +6,8 @@ A website that offers weather updates for your traveling needs.
 ## Built With
 * HTML
 * CSS
-*JS
-*API
+* JS
+* API
 
 
 ## Website
