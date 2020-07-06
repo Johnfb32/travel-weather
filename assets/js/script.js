@@ -17,7 +17,6 @@ var getCityWeather = function (city) {
             weatherContainer.append("<p>Wind-speed: " + data.wind.speed + "</p>");
             weatherContainer.append("<p>Condition: " + data.weather[0].description + "</p>");
         });
-
     });
 }
 var getCityForecast = function (city) {
@@ -37,15 +36,12 @@ var getCityForecast = function (city) {
                 newDiv.append("<p>" + today + "</p>")
                 newDiv.append("<p>Humidity: " + data.list[i].main.humidity + "</p>")
                 newDiv.append("<p>Temperature: " + data.list[i].main.temp + "</p>")
-                var img = $("<img>").attr("src", "http://openweathermap.org/img/wn/" +data.list[i].weather[0].icon +".png");
+                var img = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon + ".png");
                 newDiv.append(img)
 
                 weatherContainerFive.append(newDiv);
             }
-
-        
         });
-
     });
 }
 
@@ -66,7 +62,6 @@ var formSubmitHandler = function (event) {
 var displayWeather = function (weather, searchTerm) {
     weatherContainer.textContent = "";
     weatherSearchTerm.textContent = searchTerm;
-
 };
 
 userFormEl.addEventListener("submit", formSubmitHandler);
